@@ -16,5 +16,6 @@ public class playerController : MonoBehaviour
         float xInput = Input.GetAxis("Horizontal");
         // Add force based on our input.
         rig.AddForce(Vector3.right * xInput * moveForce);
+
     }
 }
