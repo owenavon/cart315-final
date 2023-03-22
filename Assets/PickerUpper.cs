@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PickerUpper : MonoBehaviour
 {
@@ -16,7 +17,28 @@ public class PickerUpper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (count >= 2)
+        {
+            Debug.Log("Good job");
+            // SceneManager.LoadScene("Level 2");
+        }
+        else
+        {
+            Debug.Log("under 2");
+            // SceneManager.LoadScene("Level 1");
+        }
+    }
 
+    void OnTriggerEnter()
+    {
+        if (count >= 2)
+        {
+            SceneManager.LoadScene("Level 2");
+        }
+        else
+        {
+            SceneManager.LoadScene("Level 1");
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
