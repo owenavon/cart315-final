@@ -5,12 +5,10 @@ using System.Runtime.CompilerServices;
 
 public class NextLevel : MonoBehaviour
 {
-
     public PickerUpper player;
-
     void OnTriggerEnter()
     {
-        if (player.count >= 2)
+        if (player.count >= 5)
         {
             SceneManager.LoadScene("Level 2");
         }

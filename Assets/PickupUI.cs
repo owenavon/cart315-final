@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class PickupUI : MonoBehaviour
 {
-
     public PickerUpper player;
 
     // Start is called before the first frame update
@@ -17,6 +16,6 @@ public class PickupUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.GetComponent<TextMeshProUGUI>().text = "Pickup Count: " + player.count;
+        this.GetComponent<TextMeshProUGUI>().text = "Snowball Count: " + player.count;
     }
 }

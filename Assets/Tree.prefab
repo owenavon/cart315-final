@@ -748,6 +748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8ef60ba6164c6d42b22053ffabfc3a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   treeHitSound: {fileID: 8360142881762688765}
   hitColor: {r: 0.7264151, g: 0, b: 0, a: 0}
   mr: {fileID: 898243685302807041}

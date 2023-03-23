@@ -17,33 +17,12 @@ public class PickerUpper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (count >= 2)
-        {
-            Debug.Log("Good job");
-            // SceneManager.LoadScene("Level 2");
-        }
-        else
-        {
-            Debug.Log("under 2");
-            // SceneManager.LoadScene("Level 1");
-        }
-    }
 
-    void OnTriggerEnter()
-    {
-        if (count >= 2)
-        {
-            SceneManager.LoadScene("Level 2");
-        }
-        else
-        {
-            SceneManager.LoadScene("Level 1");
-        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.gameObject.CompareTag("Pickup"))
+        if (collision.collider.gameObject.CompareTag("Snowball"))
         {
             GameObject.Instantiate(particlePrefab, collision.collider.gameObject.transform.position, Quaternion.identity); // Makes a copy of the gmaeObject. Quaeternion.identiy means rotation that does not do anything.
 
@@ -53,7 +32,7 @@ public class PickerUpper : MonoBehaviour
 
             this.GetComponent<AudioSource>().Play();
 
-            Debug.Log("Pickup Count: " + count);
+            Debug.Log("Snowball Count: " + count);
         }
     }
 }
