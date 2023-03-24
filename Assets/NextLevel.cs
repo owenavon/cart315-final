@@ -8,7 +8,7 @@ public class NextLevel : MonoBehaviour
     public PickerUpper player;
     void OnTriggerEnter()
     {
-        if (player.count >= 5)
+        if (player.count >= 8)
         {
             SceneManager.LoadScene("Level 2");
         }
