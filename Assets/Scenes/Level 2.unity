@@ -781,7 +781,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0e6e1ed8f43d8ae47bc82412bbb1040a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4bb1b3eb05477564abbda201dc9c8c33, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -894,7 +894,7 @@ GameObject:
   - component: {fileID: 581976515}
   - component: {fileID: 581976514}
   - component: {fileID: 581976513}
-  - component: {fileID: 581976512}
+  - component: {fileID: 581976517}
   m_Layer: 0
   m_Name: Tigger
   m_TagString: Untagged
@@ -902,19 +902,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &581976512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581976511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bace7c099dcb7bb4c901cbcd11b2da87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!65 &581976513
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -994,6 +981,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &581976517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581976511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d31b8bf55798f8b44ba0931067241a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1 &592590752
 GameObject:
   m_ObjectHideFlags: 0

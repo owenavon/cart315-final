@@ -6,7 +6,7 @@ public class playerController2 : MonoBehaviour
     public Rigidbody rig; // A referene to our Rigidbody component
     private float downForce = 180; // Force applied when we move left or right
     private float upForce = -100;
-    private float maxSpeed = 20;
+    private float maxSpeed = 30;
     private float speed = 1;
     private float rotationSpeed = 180;
 
@@ -50,7 +50,6 @@ public class playerController2 : MonoBehaviour
         rig.AddForce(Vector3.left * verticalInput * upForce);
         rig.AddForce(Vector3.right * verticalInput * upForce);
         rig.AddForce(Vector3.back * verticalInput * upForce);
-
 
 
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);

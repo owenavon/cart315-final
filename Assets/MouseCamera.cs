@@ -15,6 +15,7 @@ public class MouseCamera : MonoBehaviour
         turn.x += Input.GetAxis("Mouse X");
         turn.y += Input.GetAxis("Mouse Y");
 
+    
         transform.localRotation = Quaternion.Euler(-turn.y, turn.x, 0);
     }
 }
