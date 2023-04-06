@@ -980,7 +980,7 @@ GameObject:
   - component: {fileID: 1519617069}
   - component: {fileID: 1519617068}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: StartGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1115,7 +1115,7 @@ GameObject:
   - component: {fileID: 1556999889}
   - component: {fileID: 1556999888}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

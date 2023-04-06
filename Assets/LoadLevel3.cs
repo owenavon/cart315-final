@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NextLevel3 : MonoBehaviour
+public class LoadLevel3 : MonoBehaviour
 {
     public PickerUpper player;
     void OnTriggerEnter()
