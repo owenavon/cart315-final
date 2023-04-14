@@ -16,6 +16,6 @@ public class PickupUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.GetComponent<TextMeshProUGUI>().text = "Collect 5 Snowballs. Snowball Count: " + player.count;
+        this.GetComponent<TextMeshProUGUI>().text = "Collect at least 7 snowballs. Avoid the trees. Snowball Count: " + player.count;
     }
 }
