@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class tree : MonoBehaviour
+public class Tree : MonoBehaviour
 {
     public PickerUpper player;
     public AudioSource treeHitSound;

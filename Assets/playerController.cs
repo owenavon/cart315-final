@@ -44,14 +44,13 @@ public class playerController : MonoBehaviour
         // Get the Vertical input
         float verticalInput = Input.GetAxis("Vertical");
 
-        // Add force based on our input
+        // Add force based on input
         rig.AddForce(Vector3.right * horizontalInput * downForce);
         
         rig.AddForce(Vector3.left * verticalInput * upForce);
         rig.AddForce(Vector3.right * verticalInput * upForce);
 
-
-
+        // Movement
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
         movementDirection.Normalize();
 

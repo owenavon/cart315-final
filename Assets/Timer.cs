@@ -3,7 +3,7 @@ using TMPro; // Import text mesh pro
 using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
-    private float timeDuration = 75f;
+    private float timeDuration = 70f;
     private float timer;
 
     [SerializeField]
@@ -37,7 +37,7 @@ public class Timer : MonoBehaviour
 
     private void UpdateTimerDisplay (float time)
     {
-        float seconds = Mathf.FloorToInt(time % 75);
+        float seconds = Mathf.FloorToInt(time % 70);
 
         string currentTime = string.Format("{00:00}", seconds);
         TimerOnScreen.text = "Timer: " + currentTime;

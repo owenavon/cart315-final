@@ -8,7 +8,7 @@ public class LoadLevelOnCondition : MonoBehaviour
     public PickerUpper player;
     void OnTriggerEnter()
     {
-        if (player.count >= 7)
+        if (player.count >= 5)
         {
             SceneManager.LoadScene("Level 2");
         }
